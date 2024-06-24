@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activitydetalhes">
+
+    <ImageView
+        android:id="@+id/imageViewItem"
+        android:layout_width="399dp"
+
+        android:layout_height="289dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="435dp"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNameDetail"
+        android:layout_width="395dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/imageViewItem"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="305dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="394dp"
+        android:fontFamily="@font/yantramanav_light"
+        android:text="itemnovo mockado internamente"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDescriptionDetail"
+        android:layout_width="395dp"
+        android:layout_height="210dp"
+        android:layout_below="@id/textViewNameDetail"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="173dp"
+        android:fontFamily="@font/yantramanav_light"
+        android:text="Descrição do Item lorem ipson uma grade de trabalho onde a filosofia nao alcanca determinadas pessoas, fazendo assim nunca se tornarem um ser humano conciente e individual"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPriceDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDescriptionDetail"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="577dp"
+        android:layout_marginEnd="330dp"
+        android:layout_marginBottom="127dp"
+        android:text="R$ 0,00"
+        android:textColor="#17741B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddQuantity"
+        android:layout_width="63dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/textViewPriceDetail"
+
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="658dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/botao_menosemais"
+        android:text="+"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewQuantity"
+        android:layout_width="42dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/textViewPriceDetail"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="666dp"
+        android:layout_marginEnd="302dp"
+        android:layout_marginBottom="28dp"
+        android:layout_toStartOf="@id/btnRemoveQuantity"
+        android:layout_toEndOf="@id/btnAddQuantity"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRemoveQuantity"
+        android:layout_width="63dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/textViewPriceDetail"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="658dp"
+        android:layout_marginEnd="341dp"
+        android:layout_marginBottom="17dp"
+        android:layout_toEndOf="@id/textViewQuantity"
+        android:background="@drawable/botao_menosemais"
+        android:text="-"
+        android:textColorLink="#E10505"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPedir"
+        android:layout_width="218dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/textViewQuantity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="659dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/botao_customizado"
+        android:text="Pedir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="94dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="307dp"
+        android:layout_marginTop="566dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="87dp"
+        android:clickable="true"
+        android:foreground="@drawable/btn2"
+        app:backgroundTint="@color/vermelho"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
